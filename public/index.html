@@ -19,7 +19,23 @@
     <div id="content"></div>
     <!-- create a div with an id -->
 
-    <script type="text/babel" src="app.js"></script>
+    <script>
+      var ReactRouter    = window.ReactRouter;
+      var Router         = ReactRouter.Router,
+          Route          = ReactRouter.Route,
+          IndexRoute     = ReactRouter.IndexRoute,
+          Link           = ReactRouter.Link,
+          browserHistory = ReactRouter.browserHistory;
+      var ThingBox, ThingForm, ThingList, Thing;
+      var Home, Main;
+    </script>
+    <script type="text/babel" src="./Components/Thing.js"></script>
+    <script type="text/babel" src="./Components/ThingList.js"></script>
+    <script type="text/babel" src="./Components/ThingForm.js"></script>
+    <script type="text/babel" src="./Components/ThingBox.js"></script>
+    <script type="text/babel" src="./Views/Home.js"></script>
+    <script type="text/babel" src="./Views/Main.js"></script>
+    <script type="text/babel" src="router.js"></script>
 
   </body>
 </html>
